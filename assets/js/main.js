@@ -9,6 +9,19 @@
 ;(function($) {
     "use strict";
 
+
+
+
+    document.querySelectorAll('a[data-target]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('data-target');
+            document.getElementById(targetId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
     var themesflatTheme = {
 
         // Main init function
