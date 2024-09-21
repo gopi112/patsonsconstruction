@@ -60,7 +60,7 @@
                         <nav id="main-nav" class="main-nav">
                             <ul id="menu-primary-menu" class="menu">
                                 <li class="menu-item menu-item-has-children current-menu-item">
-                                    <a  href="javascript:void(0);" data-target="projects">home</a>
+                                    <a  href="javascript:void(0);" data-target="home">Home</a>
                                     <!-- <ul class="sub-menu">
                                         <li class="menu-item current-item"><a href="home.html">HOME 1</a></li>
                                         <li class="menu-item"><a href="home-2.html">HOME 2</a></li>
@@ -872,6 +872,24 @@
 <a id="scroll-top"></a>
 
 <!-- Javascript -->
+<script>
+    // Add event listener for all anchor tags with data-target attribute
+    document.querySelectorAll('a[data-target]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();  // Prevent the default behavior (which is to go to the URL)
+
+            const targetId = this.getAttribute('data-target');  // Get the value of data-target
+            const targetSection = document.getElementById(targetId);  // Get the target section
+
+            if (targetSection) {
+                // Smooth scroll to the target section
+                targetSection.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/plugins.js"></script>
 <script src="assets/js/tether.min.js"></script>
