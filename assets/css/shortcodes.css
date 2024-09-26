@@ -73,7 +73,7 @@
 .themesflat-headings .sub-heading {  margin: 0px; }
 .themesflat-headings .sup-heading { font-family: 'Montserrat', sans-serif; }
 .themesflat-headings .sub-heading { font-weight: 300; color: #666; }
-.themesflat-headings.text-center .sub-heading { text-align: center; margin: 0 auto; max-width: 590px;  }
+.themesflat-headings.text-center .sub-heading { text-align: justify; margin: 0 auto; max-width: 590px;  }
 .themesflat-headings .sep-icon { display: inline-block; position: relative; }
 
 .themesflat-headings .sep-icon-after,
