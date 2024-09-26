@@ -206,6 +206,9 @@ input[type="color"] { color: #777; border: 1px solid #e7e7e7; padding: 13px 20px
 .wpcf7-form textarea,
 .wpcf7-form input { margin-bottom: 0; }
 
+
+.themesflat-filter.style-1 li a:hover,
+.themesflat-filter.style-1 li.active a { color: #ffc30c; }
 /* Input focus */
 textarea:focus,
 input[type="text"]:focus,
